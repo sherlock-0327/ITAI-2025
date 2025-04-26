@@ -96,7 +96,7 @@ class FNO2d(nn.Module):
     def __init__(self, num_channels, modes1=12, modes2=12, width=20, initial_step=10):
         super().__init__()
 
-        """
+        """ 
         The overall network. It contains 4 layers of the Fourier layer.
         1. Lift the input to the desire channel dimension by self.fc0 .
         2. 4 layers of the integral operators u' = (W + K)(u).
