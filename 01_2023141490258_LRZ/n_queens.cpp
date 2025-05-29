@@ -47,6 +47,10 @@ int print(){
 
 int main(){
     scanf("%d",&number);
+    if(number<4||number>20){
+        printf("Invaild input.\n");
+        return -1;
+    }
     n_queens(1,number);
     printf("Total solutions: %d\n", count);
     return 0;
