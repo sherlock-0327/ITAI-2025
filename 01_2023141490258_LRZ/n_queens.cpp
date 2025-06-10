@@ -42,7 +42,7 @@ bool is_safe(int x, int y) {
 }
 
 int print() {
-    /*for (int i = 1; i <= number; i++) {
+    for (int i = 1; i <= number; i++) {
         for (int j = 1; j <= number; j++) {
             if (location[i] != j) {
                 putchar('o');
@@ -51,9 +51,9 @@ int print() {
             }
         }
         putchar('\n');
-    }*/
+    }
     count++;
-    //putchar('\n');
+    putchar('\n');
     return 0;
 }
 
