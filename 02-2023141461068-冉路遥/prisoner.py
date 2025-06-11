@@ -11,11 +11,10 @@ def box_init(num: int)-> list:
     random.shuffle(boxes)
     return boxes
 
-def random_strategy(num_prisoners: int , boxes: list, tries: int, epoches: int) -> float:
+def random_strategy(num_prisoners: int , tries: int, epoches: int) -> float:
     '''
     this is a random strategy for this quesiton
     :param num_prisoners: the number of prisoners
-    :param boxes: the boxes list which prisoners will choose
     :param tries: total tries for each prisoner
     :param epoches: total epoches for all prisoners
     :return: success rate:float
@@ -23,6 +22,7 @@ def random_strategy(num_prisoners: int , boxes: list, tries: int, epoches: int) 
     successes = 0
     for _ in range(epoches):
         all_found = True
+        boxes = box_init(num_prisoners)
         for prisoner in range(num_prisoners):
             found = False
             chosen_box = random.sample(range(num_prisoners), tries)
@@ -37,11 +37,10 @@ def random_strategy(num_prisoners: int , boxes: list, tries: int, epoches: int) 
             successes += 1
     return successes / epoches
 
-def cycle_strategy(num_prisoners: int, boxes: list, tries: int, epoches: int) -> float:
+def cycle_strategy(num_prisoners: int, tries: int, epoches: int) -> float:
     '''
     this is a cycle strategy for this quesiton
     :param num_prisoners: the number of prisoners
-    :param boxes: the boxes list which prisoners will choose
     :param tries: total tries for each prisoner
     :param epoches: total epoches for all prisoners
     :return: success rate:float
@@ -49,6 +48,7 @@ def cycle_strategy(num_prisoners: int, boxes: list, tries: int, epoches: int) ->
     successes = 0
     for _ in range(epoches):
         all_found = True
+        boxes = box_init(num_prisoners)
         for prisoner in range(num_prisoners):
             found = False
             box_index = prisoner
@@ -73,9 +73,8 @@ if __name__ == '__main__':
     K = int(K)
     T = int(T)
 
-    boxes = box_init(N)
-    random_rate = random_strategy(N, boxes, K, T)
-    cycle_rate = cycle_strategy(N, boxes, K, T)
+    random_rate = random_strategy(N, K, T)
+    cycle_rate = cycle_strategy(N, K, T)
 
     print(f"正在模拟 {N} 名囚犯，每人尝试 {K} 次，共进行 {T} 轮实验...")
     print(f"随机策略的成功率为 {random_rate:.6f}")
