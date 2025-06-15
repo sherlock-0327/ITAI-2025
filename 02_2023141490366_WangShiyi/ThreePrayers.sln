@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ThreePrayers", "ThreePrayers.pyproj", "{C4585070-C81B-44B3-97A0-EF7AE16B5D39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4585070-C81B-44B3-97A0-EF7AE16B5D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4585070-C81B-44B3-97A0-EF7AE16B5D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FA6EEA7-CA4A-48C5-A3CE-019A0DBC4CA9}
+	EndGlobalSection
+EndGlobal
