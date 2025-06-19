@@ -1,0 +1,47 @@
+{
+  "standard": {
+    "4": {
+      "time": 0.0,
+      "solutions": 2
+    },
+    "5": {
+      "time": 0.0,
+      "solutions": 10
+    },
+    "6": {
+      "time": 0.001131296157836914,
+      "solutions": 4
+    },
+    "7": {
+      "time": 0.0010547637939453125,
+      "solutions": 40
+    },
+    "8": {
+      "time": 0.004396677017211914,
+      "solutions": 92
+    }
+  },
+  "optimized": {},
+  "bitwise": {
+    "4": {
+      "time": 0.0,
+      "solutions": 2
+    },
+    "5": {
+      "time": 0.0,
+      "solutions": 10
+    },
+    "6": {
+      "time": 0.0,
+      "solutions": 4
+    },
+    "7": {
+      "time": 0.0,
+      "solutions": 40
+    },
+    "8": {
+      "time": 0.002301931381225586,
+      "solutions": 92
+    }
+  }
+}
